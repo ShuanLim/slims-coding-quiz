@@ -53,10 +53,10 @@ const quizQuestions = [{
 ,
 }];
 
-// timer counts down from 75 seconds
-var seconds = 5;
-var time;
 
+// timer counts down from 75 seconds
+var seconds = 75;
+var time;
 
 // the time function
 function quizTimer() {
@@ -72,19 +72,16 @@ function quizTimer() {
   */
   time = setTimeout("quizTimer()", 1000);
 
-  // the quiz stops when time expires
+  // quiz stops when time expires
   if (seconds < 0) {
     stopQuiz();
   }
 }
 
-/* filler code to clear the time variable will need to go here. 
-  user's name, display their score, and display a highscores table.
-*/
+
+
+
 function stopQuiz() {
   clearTimeout(time);
   document.getElementById("timer").innerHTML = "0";
-  alert("You ran out of time! Let's see how you did.");
 }
-
-
