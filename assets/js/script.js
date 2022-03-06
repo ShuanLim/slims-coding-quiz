@@ -1,6 +1,62 @@
+function quizStart(questions, quizContainer)
+
+// questions for the quiz 
+const quizQuestions = [{
+  question: "Commonly used data types DO NOT Include:",
+  answers: {
+    a: "strings",
+    b: "booleans",
+    c: "alerts",
+    d: "numbers"
+  },
+  correctAnswer: "c"
+},
+{
+  question: "The condition in an if / else statement is enclosed with ______:",
+  answers: {
+    a: "quotes",
+    b: "curly brackets",
+    c: "parenthesis",
+    d: "square brackets"
+  },
+  correctAnswer: "c"
+},
+{
+  question: "Arrays in JavaScript can be used to store ______:",
+  answers: {
+    a: "numbers and strings",
+    b: "other arrays",
+    c: "booleans",
+    d: "all of the above"
+  },
+  correctAnswer: "d"
+},
+{
+  question: "String values must be enclosed within ______ when being assigned to variables.",
+  answers: {
+    a: "commas",
+    b: "curly brackets",
+    c: "quotes",
+    d: "parenthesis"
+  },
+  correctAnswer: "c"
+},
+{
+  question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+  answers: {
+    a: "JavaScript",
+    b: "terminal/bash",
+    c: "for loops",
+    d: "console.log"
+  },
+  correctAnswer: "d"
+,
+}];
+
 // timer counts down from 75 seconds
 var seconds = 5;
 var time;
+
 
 // the time function
 function quizTimer() {
@@ -22,7 +78,7 @@ function quizTimer() {
   }
 }
 
-/* filler code to clear the time variable. Maybe write some code here to get the
+/* filler code to clear the time variable will need to go here. 
   user's name, display their score, and display a highscores table.
 */
 function stopQuiz() {
