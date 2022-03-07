@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Slim's Code Quiz</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+      Slim's Code Quiz
+    </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
-
   <body>
-    <!-- quiz container-->
-    <div id="quiz">
-      <h1>Coding Quiz Challenge</h1>
+    <header>
+      <a class="view-high-scores" href="./highscores.html">
+        View high scores
+      </a>
       <p>
-        Try to answer the following code-related questions within the time
-        limit. Keep in mind that incorrect answers will penalize your score/time
-        by ten seconds!
+        Time: 75
       </p>
-    </div>
-    <div id="start-screen"></div>
-    <!-- start quiz button -->
-    <button class="button" id="start-quiz-button" onclick="quizTimer()">
-      Start Quiz
-    </button>
-
-    <!-- show the timer -->
-    <p id="timer">Time: 75</p>
-
-    <script src="./assets/js/script.js"></script>
+    </header>
+      <div class="container">
+        <div id="home" class="flex-column flex-center">
+          <h1>Coding Quiz Challenge
+          </h1>
+          <br />
+          <h2 class="text-center">
+            Try to answer the following code-related questions within the time limit.<br />
+            Keep in mind that incorrect answers will penalize your score/time<br />
+            by ten seconds!
+          </h2>
+          <br />
+          <a href="./quiz.html" class="btn">Start Quiz</a>
+        </div>
+      </div>
   </body>
 </html>

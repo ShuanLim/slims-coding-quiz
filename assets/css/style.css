@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.view-high-scores {
+  color: DarkOrchid;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 32px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background: Indigo;
+  border-radius: 4px;
+  color: White;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: DarkOrchid;
+}
+
+.btn[disabled]:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* End Page CSS */
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+input {
+  border: none;
+  box-shadow: 0 2px 20px 0 rgba(75, 0, 130, 1);
+  font-size: 32px;
+  margin: 16px;
+  padding: 24px;
+  width: 320px;
+}
+
+input::placeholder {
+  color: #999999;
+}
+
+#username {
+  margin: 16px;
+  outline: none;
+  width: 100%;
+}
+
+#end-text {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+#saveScoreBtn {
+  border: none;
+}
